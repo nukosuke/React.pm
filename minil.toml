@@ -1,0 +1,6 @@
+name = "React"
+# badges = ["travis"]
+authority="cpan:NUKOSUKE"
+
+module_maker="ModuleBuildTiny"
+
