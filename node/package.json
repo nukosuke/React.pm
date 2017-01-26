@@ -25,5 +25,9 @@
   "devDependencies": {
     "typescript": "^2.1.5",
     "typings": "^2.1.0"
+  },
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
   }
 }
