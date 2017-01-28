@@ -19,11 +19,6 @@ sub new {
   }, $class;
 }
 
-
-#
-# class method
-#
-
 sub eval_js {
   my ($self, $js_code) = @_;
   my $c = pop @{$self->{pool}};
