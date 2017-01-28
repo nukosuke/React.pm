@@ -1,12 +1,12 @@
 {
-   "abstract" : "It's new $module",
+   "abstract" : "React server-side rendering for Perl with Node.js",
    "author" : [
-      "nukosuke <nukosuke@shibuya.tech>"
+      "nukosuke <nukosuke@cpan.org>"
    ],
    "dynamic_config" : 0,
    "generated_by" : "Minilla/v3.0.4, CPAN::Meta::Converter version 2.150005",
    "license" : [
-      "perl_5"
+      "unknown"
    ],
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
@@ -42,6 +42,7 @@
       },
       "runtime" : {
          "requires" : {
+            "JSON::XS" : "> 3.00",
             "perl" : "5.008001"
          }
       },
@@ -52,7 +53,22 @@
       }
    },
    "release_status" : "unstable",
-   "version" : "0.01",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/nukosuke/perl-react/issues"
+      },
+      "homepage" : "https://github.com/nukosuke/perl-react",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/nukosuke/perl-react.git",
+         "web" : "https://github.com/nukosuke/perl-react"
+      }
+   },
+   "version" : "0.00000001",
    "x_authority" : "cpan:NUKOSUKE",
+   "x_contributors" : [
+      "nukosuke <nukosuke@users.noreply.github.com>",
+      "nukosuke <nukosuke@shibuya.tech>"
+   ],
    "x_serialization_backend" : "JSON::PP version 2.27300"
 }

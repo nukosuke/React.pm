@@ -1,6 +1,6 @@
 # NAME
 
-React - React server-side rendering for Perl
+React - React server-side rendering for Perl with Node.js
 
 # SYNOPSIS
 
@@ -19,4 +19,4 @@ it under the MIT license.
 
 # AUTHOR
 
-nukosuke <nukosuke@shibuya.tech>
+nukosuke <nukosuke@cpan.org>
