@@ -1,14 +1,14 @@
 {
-  "name": "perl-react",
+  "name": "react.pm",
   "version": "0.0.0",
   "description": "React server-side rendering on Perl",
-  "main": "index.js",
+  "main": "lib/PerlReact.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/nukosuke/perl-react.git"
+    "url": "git+ssh://git@github.com:nukosuke/React.pm.git"
   },
   "keywords": [
     "react",
@@ -19,9 +19,9 @@
   "author": "nukosuke",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nukosuke/perl-react/issues"
+    "url": "https://github.com/nukosuke/React.pm/issues"
   },
-  "homepage": "https://github.com/nukosuke/perl-react#readme",
+  "homepage": "https://github.com/nukosuke/React.pm#readme",
   "devDependencies": {
     "typescript": "^2.1.5",
     "typings": "^2.1.0"
