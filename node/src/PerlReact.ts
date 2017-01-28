@@ -5,12 +5,14 @@ import ComponentRegistry   from "./ComponentRegistry";
 
 
 export default class PerlReact {
-  private context: NodeJS.Global | Window | Object;
   private components: ComponentRegistry;
 
-  constructor(context) {
-    this.context = context || global || window;
+  constructor() {
+    let context = ((typeof global !== "undefined") && global) ||
+      ((typeof window !== "undefined") && window);
+    context["PerlReact"] = this;
     this.components = new ComponentRegistry();
+    this.serverRender = this.serverRender.bind(this);
   }
 
   register(components: {[key: string]: React.ComponentClass<any>}) {
@@ -26,7 +28,7 @@ export default class PerlReact {
   serverRender(options) {
     const { name, domNodeId, props } = options;
     let html = "";
-    // let console_replay;
+    let console_replay;
     let has_errors = false;
 
     try {
